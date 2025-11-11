@@ -26,12 +26,12 @@ public class controllerArticulo {
    //private serviceArticulo ariService;
 
     @PostMapping
-    public modelArticulo crearAlumno(@RequestBody modelArticulo articulo) {
+    public modelArticulo crearArticulo(@RequestBody modelArticulo articulo) {
         return artiRepository.save(articulo);
     }
 
     @GetMapping
-    public List<modelArticulo> obtenerAlumnos() {
+    public List<modelArticulo> obtenerArticulo() {
         return artiRepository.findAll();
     }
 
